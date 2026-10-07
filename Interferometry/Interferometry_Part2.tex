@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{circuitikz}
+
+\oddsidemargin -0.15in
+\evensidemargin -0.15in
+\headheight 0in
+\headsep 0in
+%\topmargin -0.25in
+\textheight 9.3in
+\textwidth 6.8in
+
+\begin{document}
+
+
+\begin{center}
+\section*{
+Franklin \& Marshall College \hfill PHY 223\\
+\bigskip
+{\Large \it Interferometry 2}}
+\end{center}
+ 
+In this second week or work with the photon interferometry apparatus, you will
+observe and measure two-slit interference of photons with a source so weak that
+there is only one photon in the apparatus at a time. You will need to refer to
+the Week I lab handout as well as your notes and data from Week I.
+
+\vspace{5mm}
+
+\noindent {\bf Using the PMT}
+
+In this lab, you will use the photomultiplier tube (PMT), which is a very
+sensitive piece of equipment that can convert single photons into detectable
+bursts of electrons. The PMT should not be exposed even to moderate levels of
+light when turned off, and must not be exposed to anything but the dimmest of
+lights when turned on. In this context, ordinary room light is intolerably
+bright even to a PMT turned off, and light as dim as moonlight is much too
+bright for a PMT turned on. That is why the PMT box is equipped with a shutter,
+and the apparatus as a whole is equipped with a buzzer alarm, to help protect
+the PMT from misadventure. The goal of these safety measures is to assure that
+the PMT is used
+
+\begin{itemize}
+\item only when its box is coupled to the two-slit apparatus (it is), and
+\item only when the cover of the apparatus is closed, and
+\item only when the light-bulb (and not the laser) source is being used inside
+the box.
+\end{itemize}
+
+Before you do anything with the PMT, locate on the detector box the HIGH-VOLTAGE
+toggle switch that activates its power supply, and ensure that it’s turned off;
+also turn down to 0.00 the 10-turn dial that will later set the voltage that
+enables the process of electron-multiplication inside it. Also, ensure that the
+shutter of the box is still in its down position.
+
+\vspace{5mm}
+
+\noindent {\bf Procedure: Single Photon Mode}
+
+Move the laser out of the way so that light from the bulb can propagate through
+the system. Turn the bulb power adjustment down to 0 on its scale, and set the
+3-position toggle switch to the BULB position; dial the bulb adjustment up from 0 until
+you see the bulb light up. Keep the amplitude to below 6 to help prevent the
+bulb from burning out early. The light you observe should appear green. If it
+doesn't, you're missing a filter that only lets light between 541 nm and 551 nm. 
+
+Close the enclosure carefully. Adjust the micrometers so that both slits are
+open and the detector slit is at the center of the interference pattern. Connect
+the computer to the PMT box and start the software to measure the counts on the
+PMT. {\bf Shut the door and turn the lights off.} Turn the PMT on and set the
+gain to 4. Turn the bulb on and adjust its amplitude until the PMT registers
+10$^3$-10$^4$ events per seconds.
+
+Measure the number of events for each position of the detector slit across the
+same range as your previous measurement with the photodiode. At each location,
+let the computer update a number of times and note a couple of different values. 
+
+Move the central micrometer to block both slits and record the dark counts. You
+will need this for your analysis.
+
+\vspace{5mm}
+
+\noindent {\bf Analysis}
+
+\begin{itemize}
+\item Graph your data with uncertainty.
+\item Compare your results to your model.
+\item Estimate the photon density. To do this, note that the PMT is not 100\%
+efficient; in fact, for green light, it produces countable electronic events for
+only about 4\% of the incident photons. Now take your central-maximum reading
+for the event rate, and use this efficiency estimate to infer the rate of
+arrival of all photons at the photocathode of the PMT. From this arrival rate,
+compute the average time interval between the arrivals of successive photons.
+Next, compute the ‘time of flight’ of a photon in the apparatus, the time it
+takes to traverse the distance from the bulb source to the detector. Comparing
+the time of flight of a given photon to the typical time interval between the
+arrival of successive photons, you can compute the fraction of the time there is
+even one photon in flight through the apparatus. What is this fraction for your
+data? This fraction measures numerically the sense in which the apparatus allows
+you to work ‘one photon at a time’; and yet even at this low rate of photons,
+you can see phenomena that you attribute to constructive and destructive
+interference.
+\end{itemize}
+\vspace{5mm}
+
+\noindent {\bf (Optional) Adjusting the PMT}
+
+You’ll need a reasonable fast ($>$20 MHz bandwidth), preferable digital,
+oscilloscope for first examination, and a digital counter sensitive to TTL-level
+($+$4 V positive-going) pulses for eventual counting, of photon events. Set the
+scope to about 50 mV/division vertically, and 200 ns/division horizontally, and
+set it to trigger on positive-going pulses of perhaps $>$20 mV height. Now find
+the PHOTOMULTIPLIER OUTPUT of the detector box, and connect it via a BNC cable
+to the vertical input of the scope; use a 50 $\Omega$ termination at the scope.
+You are about to look at pulses, each of which starts with the light-induced
+ejection of a single electron from the light-sensitive photocathode of the PMT.
+Those photoelectrons will be amplified by about 10$^5$ inside the PMT, and
+arrive as a pulse of about 10$^5$ electrons, or about -2x10$^{-14}$ Coulombs,
+at the input of a charge- sensitive amplifier. That device will convert the
+pulse of negative charge to a positive- going voltage pulse, which you will see
+on the scope.
+
+When you are ready with these electronics, keep the shutter closed, set the
+HIGH- VOLTAGE 10 - turn dial to 0.00, and turn on the HIGH-VOLTAGE toggle
+switch. You are now ready to start dialing up the high-voltage supply that
+provides the potentials inside the PMT needed for the electron-multiplication
+process; watch the scope display as you start to dial up the voltage, about a
+turn at a time. [Each full turn raises the PMT ‘bias’ by about 100 V, and the
+``gain'' of the PMT grows exponentially with this voltage setting. A pair of
+terminals on the panel allows you to monitor the potential difference (PMT
+bias/1000) using an ordinary digital multimeter.] As you raise the bias voltage,
+you will see occasional transient electronic noise, but the scope display should
+be quiet at each steady voltage. Somewhere around a setting of 4 or 5 turns of
+the dial, you should get occasional positive-going pulses on the scope,
+occurring at a modest rate of 1-10 per second.
+
+\begin{itemize}
+\item If you see some sinusoidal modulation of a few mV amplitude, and of about
+200 kHz frequency, in the baseline of the PMT signal, this is normal.
+
+\item If you see a continuing high rate ($>$10 kHz) of pulses from the PMT, this
+is not normal, and you should turn down, or off, the bias level and start
+fresh - you may have a malfunction, or a light leak.
+\end{itemize}
+
+If you see this low rate of pulses, you have discovered the ``dark rate'' of the
+PMT, its output pulse rate even in the total absence of light. You also now have
+the PMT ready to look at photons from your two-slit apparatus, so finally you
+may open the shutter (by grasping that vertically-emerging rod and lifting it a
+few cm). The scope should now show a much greater rate of pulses, perhaps of
+order 10$^3$ per second, and that rate should vary systematically with the setting
+of the bulb intensity.
+
+If you can see those analog pulses, you are ready to look at the digital pulses
+they trigger. Inside the PMT pulse amplifier is a pulse generator that emits, at
+the OUTPUT TTL connector, a single pulse, of fixed height and duration, each
+time the analog pulse you’re viewing exceeds an adjustable threshold. Arrange
+another BNC cable, also terminated at its far end, to a second vertical channel
+on your scope, this one set for 2 V/div vertically. Now start with the
+discriminator control on your PMT box set to 0, and watch the scope display the
+analog, and TTL-level, pulse outputs in dual-trace operation. You should be able
+to find a discriminator setting, low on the dial, for which the scope shows one
+TTL pulse for each of, and for only, those analog pulses that reach (say) a $+$50
+mV level.
+
+\begin{itemize}
+\item If your analog pulses are mostly not this high, you can raise the PMT bias
+by half a turn (50 Volts) to gain more electron multiplication.
+
+\item If your TTL pulses come much more frequently than the analog pulses, set
+the discriminator dial lower on its scale.
+\end{itemize}
+
+Now send the TTL pulses to a counter, arranged to display successive readings of
+the number of pulses that occur in successive 1 sec intervals. These represent
+photon-induced events (which are converted in the PMT to photoelectrons, then
+multiplied to electron pulses, then amplified to voltage pulses meeting a
+threshold criterion). Because of the <100\% efficiency of the PMT, not every
+photon is detected; but you are seeing a representative subset of events due to
+the arrivals of individual photons.
+
+To confirm that this is true, record a series of ``dark counts'' obtained with
+the light bulb dialed all the way town to 0 on its scale. Now choose a setting
+that gives an adequate photon count rate (about 10$^3$/sec) and use the
+slit-blocker, according to your previously obtained settings, to block the light
+from both slits. This should reduce the count rate to a background rate,
+probably somewhat higher than the dark rate. Next, open up both slits, and try
+moving the detector slit to see if you can see interference fringes in the
+photon count rate. You will need to pick an detector-slit location, then wait
+for a second or more, then read the photon count in one or more 1 sec intervals,
+before trying a new detector-slit location. If you can see maxima and minima,
+you are ready to take data.
+
+A first sort of data will enable you to be assured that you have set the PMT
+bias voltage to a suitable range. For this data, the independent variable is the
+PMT voltage setting, or one of its surrogates the 10-turn dial setting (1.00
+turn $=$ 100 V of bias) or the monitor voltage (0.10 V $=$ 100 V of bias). The
+dependent variables are both count rates as read by the TTL counter: one is the
+count rate at the central maximum of the interference pattern, with both slits
+open; the other is the dark rate, the count rate obtained under identical
+conditions but with the PMT shutter closed. Try recording both rates over the
+range 300- 650 V of PMT bias, and plot the two count rates on a semi-logarithmic
+graph. (Or you can plot the log of the count rate against the bias voltage.) You
+should see the ``light rate'' reach a plateau, with the interpretation that you
+have reached a PMT bias that suffices to allow each genuine photoelectron to
+trigger the whole chain of electronics all the way to the TTL counter; you
+should also see the (much lower) ``dark rate'' also rising with PMT bias. See if
+your graph motivates a setting at which you are counting substantially all of
+the honest-to-goodness photon events, but minimizing the number of ``dark
+events''.
+
+\end{document}
