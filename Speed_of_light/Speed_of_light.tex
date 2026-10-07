@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{circuitikz}
+
+\oddsidemargin -0.15in
+\evensidemargin -0.15in
+\headheight 0in
+\headsep 0in
+%\topmargin -0.25in
+\textheight 9.3in
+\textwidth 6.8in
+
+\begin{document}
+
+
+\begin{center}
+\section*{
+Franklin \& Marshall College \hfill PHY 223\\
+\bigskip
+{\Large \it Speed of light}}
+\end{center}
+
+The speed of light in free space is an important and intriguing constant of
+nature. Whether the light comes from a laser on a desktop or from a distant
+galaxy that is hurtling away at fantastic speeds, the measurement of the speed
+of light will yield the same constant value. In more precise terminology, the
+speed of light is independent of the relative velocities of the light source and
+the observer.
+
+As Einstein first presented in his special theory of relativity, the speed of
+light is critically important in some surprising ways:
+
+\begin{enumerate}
+ \item The speed of light establishes an upper limit to the speed that may be 
+ imparted to any material object.
+ 
+ \item Objects moving near the speed of light follow a set of physical laws 
+ drastically different, not only from Newton’s Laws, but from the basic 
+ assumptions of human intuition.
+\end{enumerate}
+
+It is not surprising that a great deal of time and effort has been invested in
+measuring the speed of light. Some of the most accurate measurements were made
+by Albert Michelson between 1926 and 1929. Michelson measured the speed of light
+in air to be 2.99712x10$^8$ m/s. From this result he deduced the speed of light
+in free space to be 2.99796x10$^8$ m/s. Today, the speed of light in free space
+is, by definition, $(2.997924562 \pm 0.000000011)x10^8$ m/s exactly.
+
+Our approach to the measurement of the speed of light will be direct and
+intuitive, and simpler then Michelson's experiment. We will use a diode laser as
+our light source. We will send pulses of light across the lab, measure how long
+they take to come back, and deduce the speed of light from the knowledge that
+light travels at constant speed.
+
+\vspace{5mm}
+
+\noindent {\bf Laser light safety notes}
+
+We will use a relatively safe, low power laser. Nevertheless, take the following
+precautions:
+
+\begin{enumerate}
+
+\item Never look directly into the laser beam, either directly, or as it is
+reflected from a mirror or other surface.
+
+\item Keep the optical path at floor level and keep your eyes well above floor
+level at all times.
+
+\item Only people involved with the experiment should be nearby.
+
+\end{enumerate}
+
+\vspace{5mm}
+
+\noindent {\bf Experimental setup}
+
+\begin{enumerate}
+  
+\item Place the breadboard with the laser and photodiode detector on the floor.
+There should be at least 8-12 meters of space in front of the laser.
+
+\item The laser diode has two connections: the power supply that connects to an
+outlet and the trigger signal that is sent to the oscilloscope. The trigger
+signal cable should have a 50-Ohm at the oscilloscope.
+
+\item Connect the photodiode output to channel 2 on the oscilloscope.
+  
+\item Align the laser so that it propagates along a line on the floor and that
+its height is constant throughout. It will make alignment easier afterwards.
+Once this alignment is done,
+
+\item Place the mirror approximately 1 m in front of the laser and use it to
+reflect the beam on the light receiver sensor.
+
+\item Check the signal on the oscilloscope. You should trigger on channel 1.
+On channel 2, you should see a strong (100s of mV) that is stable in amplitude
+and time.
+  
+\end{enumerate}
+
+\vspace{5mm}
+
+\noindent {\bf Procedure}
+
+\begin{itemize}
+\item Using a tape measure, record the total path length of the light pulses.
+
+\item Using the cursors on the oscilloscope, measure the time delay between the
+two traces. One of the cursors should be set to a fixed feature on the triggering
+signal (channel 1). The other cursor should be set to the onset of the photodiode
+signal.
+
+\item Also using the cursors, also record your uncertainty in the time delay.
+
+\item Move the mirror back about 60 cm and repeat the measurement.
+\end{itemize}
+
+
+\vspace{5mm}
+
+\noindent {\bf Analysis}
+
+Make a graph of the time delay as a function of round trip distance. Find the
+slope of this graph and its uncertainty. Convert this slope (and uncertainty)
+into a value for the speed of light (and uncertainty).
+
+
+% \bibliographystyle{plain}
+
+% \begin{thebibliography}{10}
+
+% \bibitem {tag} L. J. van der Pauw, ``A Method of Measuring Specific
+% Resistivity and Hall Effect of Discs of Arbitrary Shape,'' Philips Research
+% Reports 13, 1 (1958).
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

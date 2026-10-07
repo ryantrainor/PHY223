@@ -1,0 +1,211 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{circuitikz}
+
+\oddsidemargin -0.15in
+\evensidemargin -0.15in
+\headheight 0in
+\headsep 0in
+%\topmargin -0.25in
+\textheight 9.3in
+\textwidth 6.8in
+
+\begin{document}
+
+
+\begin{center}
+\section*{
+Franklin \& Marshall College \hfill PHY 223\\
+\bigskip
+{\Large \it Speed of light}}
+\end{center}
+
+The speed of light in free space is an important and intriguing constant of
+nature. Whether the light comes from a laser on a desktop or from a distant
+galaxy that is hurtling away at fantastic speeds, the measurement of the speed
+of light will yield the same constant value. In more precise terminology, the
+speed of light is independent of the relative velocities of the light source and
+the observer.
+
+As Einstein first presented in his special theory of relativity, the speed of
+light is critically important in some surprising ways:
+
+\begin{enumerate}
+ \item The speed of light establishes an upper limit to the speed that may be 
+ imparted to any material object.
+ 
+ \item Objects moving near the speed of light follow a set of physical laws 
+ drastically different, not only from Newton’s Laws, but from the basic 
+ assumptions of human intuition.
+\end{enumerate}
+
+It is not surprising that a great deal of time and effort has been invested in
+measuring the speed of light. Some of the most accurate measurements were made
+by Albert Michelson between 1926 and 1929. Michelson measured the speed of light
+in air to be 2.99712x10$^8$ m/s. From this result he deduced the speed of light
+in free space to be 2.99796x10$^8$ m/s. Today, the speed of light in free space
+is, by definition, $(2.997924562 \pm 0.000000011)x10^8$ m/s exactly.
+
+Our approach to the measurement of the speed of light will be direct and
+intuitive, and simpler then Michelson's experiment. We will use a diode laser as
+our light source. We will send pulses of light across the lab, measure how long
+they take to come back, and deduce the speed of light from the knowledge that
+light travels at constant speed.
+
+\vspace{5mm}
+
+\noindent {\bf Apparatus}
+
+\begin{itemize}
+  
+\item Diode Laser — The diode laser emits an intense, narrowly- focused beam of
+light at a wavelength of approximately 650nm. In this experiment, the diode
+laser is powered by a function generator, which modulates the light intensity at
+about 4 MHz. The laser is equipped with adjustment screws for precisely aiming
+the light at the mirror.
+
+\item Function Generator — Provides power to the diode laser. The laser is
+turned on by a DC offset voltage from the function generator and modulated by a
+superimposed sine wave having frequency of about 4 MHz.
+
+\item Concave Mirror — The concave surface of the mirror helps to focus the
+light as it is reflected. The mirror is also equipped with adjustment screws for
+aiming the light back to the receiver.
+
+\item Converging Lens — The lens is used to focus returning light onto the
+active element of the light receiver. The lens has a focal length of 12.7cm.
+
+\item Light Receiver — The receiver is designed for receiving audio and video
+signals transmitted via modulated light. Since the light receiver is sensitive
+to very high-frequency modulation, it is ideally suited to this experiment.
+There are two sensitive elements on the receiver; in this experiment, you will
+use only the one labeled “Video” (which is sensitive to high frequency signals).
+(The “Audio” receiver, which is sensitive to lower frequency signals, will not
+be used in this experiment.)
+
+\item Oscilloscope — The oscilloscope is used to view both the modulating signal
+and the returned signal simultaneously. The phase difference between these two
+will be converted to a time delay.
+
+\item Other Equipment — Pasco OS-9172 Alignment bench, cables, tape measure.
+\end{itemize}
+
+\vspace{5mm}
+
+\noindent {\bf Laser light safety notes}
+
+We will use a relatively safe, low power laser. Nevertheless, take the following
+precautions:
+
+\begin{enumerate}
+
+\item Never look directly into the laser beam, either directly, or as it is
+reflected from a mirror or other surface.
+
+\item Keep the optical path at floor level and keep your eyes well above floor
+level at all times.
+
+\item Only people involved with the experiment should be nearby.
+
+\end{enumerate}
+
+\vspace{5mm}
+
+\noindent {\bf Experimental setup}
+
+\vspace{3mm}
+
+\begin{minipage}{\linewidth} \centering
+\includegraphics[scale=1.5]{./Experimental_Setup.png}
+  \captionof{figure}{ Experimental set-up showing the laser, concave mirror,
+lens, and receiver. The laser, lens, and receiver are mounted on the laser
+alignment bench. The mirror is shown mounted on a stand, but in our arrangement
+both the bench and the mirror will be placed directly on the laboratory floor.}
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{enumerate}
+  
+\item Place the laser, lens, and receiver on the alignment bench as shown in the
+figure above.
+  
+\item Place the bench on the floor, making sure that you have 12-15 meters of
+available space in front of it.
+
+\item Connect your function generator to the diode's input power and to channel
+1 of the oscilloscope. This will be the signal you trigger from.
+
+\item Connect the video output of the light receiver to channel 2 of the
+oscilloscope.
+
+\item Set the function generator for a sine wave with a frequency as close to 4
+MHz as you can make it, and press the DC Offset button to turn the DC offset
+function on. Turn the Output and DC Offset knobs completely counterclockwise to
+the zero position.
+
+\item Power on the function generator and turn up the DC Offset knob until you
+see laser light.
+  
+\item Align the laser so that it propagates along a line on the floor and that
+its height is constant throughout. It will make alignment easier afterwards.
+Once this alignment is done,
+
+\item Place the mirror approximately 1 m in front of the laser and use it to
+reflect the beam (through the lens) on the light receiver sensor. Make sure you
+go through the center of the lens. It will make the procedure simpler.
+
+\item Check the strength of the signal on the oscilloscope. You want to see a
+sine wave with decent amplitude (signal-to-noise). You might have to play with
+the function generator some more (amplitude and DC offset) to get a better
+signal. Set the oscilloscope to average 128 cycles.
+  
+\end{enumerate}
+
+\vspace{5mm}
+
+\noindent {\bf Procedure}
+
+\begin{itemize}
+\item Using a tape measure, record the total path length of the light pulses.
+
+\item Using the cursors on the oscilloscope, measure the time delay between the
+two traces.
+
+\item Also using the cursors, also record your uncertainty in the time delay.
+
+\item Move the mirror back about 60 cm and repeat the measurement.
+\end{itemize}
+
+
+\vspace{5mm}
+
+\noindent {\bf Analysis}
+
+Make a graph of the time delay as a function of round trip distance. Find the
+slope of this graph and its uncertainty. Convert this slope (and uncertainty)
+into a value for the speed of light (and uncertainty).
+
+
+% \bibliographystyle{plain}
+
+% \begin{thebibliography}{10}
+
+% \bibitem {tag} L. J. van der Pauw, ``A Method of Measuring Specific
+% Resistivity and Hall Effect of Discs of Arbitrary Shape,'' Philips Research
+% Reports 13, 1 (1958).
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
