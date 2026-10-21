@@ -2,11 +2,16 @@
 /Instructor
 /Gagnon
 /Slides
+/Labs
+/StudentWork
 old
 
 # solutions
 *olution*
 *test*
+
+# organizational files
+.gitignore
 
 #### other file types
 
